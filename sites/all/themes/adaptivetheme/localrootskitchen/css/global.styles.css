@@ -31,13 +31,19 @@
  */
 
 html {
-  background: #fff;
+  /*background: #fff;*/
 }
 
 
 body {
-  font-family: "Trebuchet MS", "Helvetica Neue", Arial, Helvetica, sans-serif;
-  font-size: 87.5%;
+	/*background: #8DAA52 url(images/bg.jpg) top center no-repeat;*/
+	background: #8DAA52;
+	color: #1B1003;
+	font-size: 14px;
+	font-family: Georgia, Times New Roman, Trebuchet MS;
+	margin: 0 auto 0;
+	padding: 0;
+	line-height: 20px;
 }
 
 
