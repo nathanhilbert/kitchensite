@@ -95,7 +95,7 @@
 
   <header<?php print $header_attributes; ?>>
     
-    <?php if ($secondary_navigation): print $secondary_navigation; endif; ?>
+    
     
     <?php if ($site_logo || $site_name || $site_slogan): ?>
       <!-- start: Branding -->
@@ -124,6 +124,9 @@
 
       </div><!-- /end #branding -->
     <?php endif; ?>
+    
+    <?php print $messages; ?>
+
 
     <!-- region: Header -->
     <?php print render($page['header']); ?>
@@ -142,7 +145,7 @@
 
 
   <!-- Messages and Help -->
-  <?php print $messages; ?>
+  
   <?php print render($page['help']); ?>
 
   <!-- region: Secondary Content -->
@@ -224,5 +227,7 @@
       <?php print render($page['footer']); ?>
     </footer>
   <?php endif; ?>
+  
+  <?php if ($secondary_navigation): print $secondary_navigation; endif; ?>
 
 </div>

@@ -134,7 +134,25 @@ var {
 /*
  * Wraps the sidebars the content column
  */
-#columns {}
+#columns {
+    background-color:#FCFDE0;
+	padding: 5px 30px 0 30px;
+	margin-top: -5px;
+    -moz-border-radius-bottomleft: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    -khtml-border-radius: 10px;
+    border-radius:10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -webkit-box-shadow: 0px 0px 13px 1px black;
+	-moz-box-shadow: 0px 0px 13px 1px black;
+	box-shadow: 0px 0px 13px 1px black;
+
+}
 
 /*
  * Main content column wrapper
@@ -426,7 +444,25 @@ ul.links li {
 /*
  * Footer region
  */
-.region-footer {}
+.region-footer {
+	background: url(images/bg-footer.png) top repeat-y;
+	width: 880px;
+	color: white;
+	padding: 20px 30px 0 0px;
+	margin-left:25px;
+	-moz-border-radius-bottomleft: 10px;
+	-moz-border-radius-bottomright: 10px;
+	border-bottom-right-radius:10px;
+	border-bottom-left-radius:10px;
+	-webkit-border-top-left-radius: 0;
+	-webkit-border-top-right-radius: 0;
+	-webkit-border-bottom-left-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	overflow: hidden;
+	position: relative;
+	z-index: 0;
+	float: left;
+}
 
 
 /* =============================================================================
@@ -435,17 +471,22 @@ ul.links li {
 
 a {
   text-decoration: none;
+  color: #C60;
 }
 
 a:link,
-a:visited {}
+a:visited {
+    color: #C60;
+}
 
 a:active,
-a.active {}
+a.active {
+    color: #C60;
+}
 
 a:hover,
 a:focus {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 
@@ -497,6 +538,26 @@ a:focus {
 
 .nav .block {
   margin-bottom: 0;
+}
+
+.nav a:link,
+.nav a:visited {
+    color:#FCFDE0;
+}
+
+.nav a:active,
+.nav a.active {
+    color: #8FA03D;
+}
+
+.nav a:hover,
+.nav a:focus {
+    color: #8FA03D;
+    text-decoration: none;
+}
+
+.nav .secondary-menu{
+    float:right;	
 }
 
 
@@ -1764,3 +1825,11 @@ tr.error {}
   min-height: 260px;
   width: auto;
 }
+
+/* TinyMCE */
+.mceContentBody{
+    background:white;	
+}
+
+
+
