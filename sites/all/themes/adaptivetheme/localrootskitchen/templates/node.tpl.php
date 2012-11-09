@@ -105,6 +105,11 @@ hide($content['comments']);
 hide($content['links']);
 ?>
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+  <?php if ($type == "article"): ?>
+   <span class='nodedatetime'>
+     <?php print format_date(strtotime($datetime), 'custom', 'M j, Y');  ?>
+   </span>
+  <?php endif; ?>
   <?php print render($title_prefix); ?>
 
   <?php if ($title && !$page): ?>

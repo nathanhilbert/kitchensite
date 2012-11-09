@@ -40,7 +40,7 @@ body {
 	background: #8DAA52;
 	color: #1B1003;
 	font-size: 14px;
-	font-family: Georgia, Times New Roman, Trebuchet MS;
+	font-family: Arial;
 	margin: 0 auto 0;
 	padding: 0;
 	line-height: 20px;
@@ -51,7 +51,12 @@ body {
  *   HTML Elements
  * ========================================================================== */
 
-h1 {}
+h1 {
+color: #C60;
+font-weight: bold;
+text-decoration: none;
+margin: 0 0 5px 0;
+padding: 0;}
 
 h2 {}
 
@@ -172,7 +177,22 @@ var {
 /*
  * Footer wrapper
  */
-#footer {}
+#footer {
+}
+
+#footer a{
+    color:white;
+    font-weight:700;
+    font-size:14px;
+	}
+
+#footer .block-title{
+    display:none;	
+}
+#footer ul li.leaf {
+  list-style-image:none;
+  list-style-type:none;  	
+}
 
 /*
  * Panels may need additional margin wrangling when in the $content region
@@ -319,6 +339,11 @@ var {
  */
 #page-title {
   margin: 0;
+  font-size: 24px;
+	font-weight: bold;
+	margin: 5px 0 5px 0;
+	padding: 0;
+	font-style: italic;
 }
 
 
@@ -518,7 +543,8 @@ a:focus {
   float: left;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding-left:7px;
+  padding-right:7px;
 }
 
 .nav li a,
@@ -718,6 +744,10 @@ nav.primary-menu-wrapper{
 	float: left;
 	font-weight: bold;
 	clear: both;	
+}
+
+nav.primary-menu-wrapper li{
+    background: url(images/border-img.png) right no-repeat;	
 }
 
 
@@ -1154,7 +1184,7 @@ ul.action-links li {}
  * Main wrapper for most blocks, block_system_main does not have it
  */
 .block {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 /*
@@ -1373,7 +1403,9 @@ ul.action-links li {}
 
 .node .user-picture {}
 
-.node .submitted {}
+.node .submitted {
+    display:none;
+}
 
 .node .submitted .username {}
 
@@ -1736,7 +1768,7 @@ tr.error {}
 .comment-unpublished p.unpublished {
   color: pink;
   color: rgba(239, 170, 170, 0.4);
-  font-family: Impact,"Arial Narrow",Helvetica,sans-serif;
+  font-family: Arial;
   font-size: 75px;
   font-weight: bold;
   height: 0;
@@ -1830,6 +1862,46 @@ tr.error {}
 .mceContentBody{
     background:white;	
 }
+
+.front #page-title{
+    display:none;	
+}
+
+.pane-title{
+	color: #C60;
+	  margin: 0;
+  font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0 5px 0;
+    padding: 0;
+    font-style: italic;
+    text-align:center;
+}
+
+.views-row{
+    background: url(images/bottom-border.png) repeat-x bottom;
+    padding-bottom: 1px;	
+    padding-top:5px;
+}
+
+.region .rounded-corner .wrap-corner{
+    background:#FEFEEB;	
+}
+
+.views-field-title{
+	font-weight:700;
+	padding-left:5px;
+	
+}
+
+.view-updates-page .views-field-created, 
+.nodedatetime,
+.view-updates-frontpage .views-field-created{
+    float:right;	
+    font-style: italic;
+}
+
+
 
 
 
