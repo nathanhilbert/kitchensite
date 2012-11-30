@@ -109,6 +109,8 @@ hide($content['links']);
    <span class='nodedatetime'>
      <?php print format_date(strtotime($datetime), 'custom', 'M j, Y');  ?>
    </span>
+   <br/>
+   <br/>
   <?php endif; ?>
   <?php print render($title_prefix); ?>
 
