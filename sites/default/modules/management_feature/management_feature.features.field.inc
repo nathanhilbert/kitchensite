@@ -10,6 +10,86 @@
 function management_feature_field_default_fields() {
   $fields = array();
 
+  // Exported field: 'comment-comment_node_potential_tenant-field_contactdate'.
+  $fields['comment-comment_node_potential_tenant-field_contactdate'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_contactdate',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'date',
+      'settings' => array(
+        'cache_count' => '4',
+        'cache_enabled' => 0,
+        'granularity' => array(
+          'day' => 'day',
+          'hour' => 0,
+          'minute' => 0,
+          'month' => 'month',
+          'second' => 0,
+          'year' => 'year',
+        ),
+        'repeat' => '0',
+        'timezone_db' => '',
+        'todate' => '',
+        'tz_handling' => 'none',
+      ),
+      'translatable' => '0',
+      'type' => 'datetime',
+    ),
+    'field_instance' => array(
+      'bundle' => 'comment_node_potential_tenant',
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'hidden',
+          'module' => 'date',
+          'settings' => array(
+            'format_type' => 'short',
+            'fromto' => 'both',
+            'multiple_from' => '',
+            'multiple_number' => '',
+            'multiple_to' => '',
+            'show_repeat_rule' => 'show',
+          ),
+          'type' => 'date_default',
+          'weight' => '0',
+        ),
+      ),
+      'entity_type' => 'comment',
+      'field_name' => 'field_contactdate',
+      'label' => 'contactdate',
+      'required' => 1,
+      'settings' => array(
+        'default_value' => 'now',
+        'default_value2' => 'same',
+        'default_value_code' => '',
+        'default_value_code2' => '',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'date',
+        'settings' => array(
+          'increment' => '30',
+          'input_format' => 'Y-m-d H:i:s',
+          'input_format_custom' => '',
+          'label_position' => 'above',
+          'repeat_collapsed' => 0,
+          'text_parts' => array(),
+          'year_range' => '-0:+3',
+        ),
+        'type' => 'date_popup',
+        'weight' => '2',
+      ),
+    ),
+  );
+
   // Exported field: 'node-potential_tenant-body'.
   $fields['node-potential_tenant-body'] = array(
     'field_config' => array(
@@ -226,6 +306,7 @@ function management_feature_field_default_fields() {
   t('Body');
   t('Email');
   t('Phone Number');
+  t('contactdate');
 
   return $fields;
 }

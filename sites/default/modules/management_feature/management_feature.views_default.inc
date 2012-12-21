@@ -74,11 +74,10 @@ function management_feature_views_default_views() {
   $handler->display->display_options['fields']['last_comment_timestamp']['table'] = 'node_comment_statistics';
   $handler->display->display_options['fields']['last_comment_timestamp']['field'] = 'last_comment_timestamp';
   $handler->display->display_options['fields']['last_comment_timestamp']['date_format'] = 'short';
-  /* Sort criterion: Content: Post date */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'node';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Sort criterion: Content: Updated/commented date */
+  $handler->display->display_options['sorts']['last_updated']['id'] = 'last_updated';
+  $handler->display->display_options['sorts']['last_updated']['table'] = 'node_comment_statistics';
+  $handler->display->display_options['sorts']['last_updated']['field'] = 'last_updated';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
